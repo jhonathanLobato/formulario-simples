@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <header>
+            <h1 class="titulo">Formulario de pesquisa de tecnologias usadas</h1>
+
+        </header>
+        <main>
+            <h2 class="aviso" >Esse formulario é somente para fins didáticos, nada que for 
+                digitado aqui será salvo</h2>
+            <form>
+                <label for="nomesobrenome">Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                <label for="email">Email</label>
+				<input type="email" id="email" class="input-padrao" required placeholder
+				="seuemail@dominio.com">
+
+                <label for="datanascimento">Data de nascimento</label>
+                <input type="date" id="datanascimento" class="input-padrao" required placeholder
+                ="00/00/0000"
+
+                <div class="trabalho">
+                    <p>Você trabalha atualmente?</p>
+
+                    <label for="radio-trabalho"><input type="radio" class="radio-trabalho" 
+                    name="trabalho">Sim, eu trabalho</label>
+                        <select>
+                            <input>
+                        </select>
+
+                    <label for="radio-naotrabalho"><input type="radio" class="radio-trabalho" 
+                    name="naotrabalho">Não, eu não trabalho</label>
+
+                </div>
+                <div class="linguagem">
+                    <p>Qual linguagem de programação você mais usa</p>
+
+                    <label for="check-java"><input type="checkbox" class="input-linguagem" 
+                    name="java">Java</label>
+
+                    <label for="check-Python"><input type="checkbox" class="input-linguagem"
+                    name="python">Python</label>
+
+                    <label for="check-C"><input type="checkbox" class="input-linguagem"
+                    name="c">C</label>
+                    
+                    <label for="check-C++"><input type="checkbox" class="input-linguagem"
+                    name="c++">C++</label>
+
+                    <label for="check-C#"><input type="checkbox" class="input-linguagem"
+                    name="c#">C#</label>
+
+                    <label for="check-Ruby"><input type="checkbox" class="input-linguagem"
+                    name="Ruby">Ruby</label>
+
+                    <div class="mensagem">
+                        <p id="mensagem">Caso não tenha achado sua linguagem de programação, digite logo abaixo:</p>
+
+                        <textarea cols="80" rows="10" 
+                        class="mensagem" required placeholder="Digite aqui"></textarea>
+
+                    </div>
+
+                </div>
+
+                <input id="enviar" type="submit" value="Enviar formulário">
+            </form>
+        </main>
+    </body>
+
+</html>
